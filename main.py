@@ -4,6 +4,7 @@ import time
 from heart import frame
 from anim import people
 from anim import skull
+
 bot = telebot.TeleBot('TG_BOT_TOKEN')
 
 
@@ -51,15 +52,6 @@ def inline(c):
             time.sleep(0.463)
             txt = txt + "\n"
         bot.edit_message_text(chat_id=c.message.chat.id, message_id=msg.message_id, text=skull[0])
-
-
-    # if c.data == 'NumberTree':
-    #     key = types.InlineKeyboardMarkup()
-    #     but_1 = types.InlineKeyboardButton(text="NumberOne", callback_data="NumberOne")
-    #     but_2 = types.InlineKeyboardButton(text="NumberTwo", callback_data="NumberTwo")
-    #     but_3 = types.InlineKeyboardButton(text="NumberTree", callback_data="NumberTree")
-    #     key.add(but_1, but_2, but_3)
-    #     bot.send_message(c.message.chat.id, 'Это кнопка 3', reply_markup=key)
 
 
 bot.polling(none_stop=True, interval=0)
