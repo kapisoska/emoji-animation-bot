@@ -5,7 +5,7 @@ from heart import frame
 from anim import people
 from anim import skull
 
-bot = telebot.TeleBot('TG_BOT_TOKEN')
+bot = telebot.TeleBot('5111638907:AAFA0tQ10eHJFngD5bvdM3umUc7B4J2hAP8')
 
 
 @bot.message_handler(commands=["start"])
