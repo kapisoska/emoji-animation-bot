@@ -1,8 +1,6 @@
 # Description
 Simple telegram bot with frame-by-frame animation
-----
-## Animation love button
-[](animation.gif)
+
 ____
 # Project structure
 ## Files
